@@ -11,6 +11,25 @@
 
    <body>
 
+      <nav>
+      <ul>
+        <li id='to-left'>
+          <p><a href='/'>Home</a></p>
+        </li>
+        <li id='to-right'>
+          <p><a href='/auth/signup'>Sign Up</a></p>
+        </li>
+        <li id='to-right'>
+          <p><a href='/auth/login'>Login</a></p>
+        </li>
+        <li id='to-right'>
+          <p><a href='/userProfile'>Profile</a></p>
+        </li>
+        <form action='/logout' method='post'>
+          <button>Logout</button></form>
+      </ul>
+    </nav>
+
       {{{body}}}
 
       <script src="/js/script.js"></script>
