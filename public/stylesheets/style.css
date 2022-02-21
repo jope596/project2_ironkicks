@@ -92,3 +92,10 @@ footer a {
 img {
   width: 100%;
 }
+.profile-user {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+  /* border: 1px solid red; */
+}

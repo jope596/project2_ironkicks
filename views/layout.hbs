@@ -13,28 +13,31 @@
    <body>
       
       <nav class="navbar navbar-dark bg-dark">
-
-         <a class="navbar-brand mb-0 h1" href='/'>Home</a>
-         <a class="navbar-brand mb-0 h1" href='/sneakers'>Sneakers</a>
-         <div>
-         <a class="navbar-brand mb-0 h1" href='/profile'>Profile</a>
-         <a class="navbar-brand mb-0 h1" href='/signup'>Sign Up</a>
-         <a class="navbar-brand mb-0 h1" href='/login'>Login</a>
+         <div class="nav-left">
+            <a class="navbar-brand mb-0 h1" href='/'>Home</a>
+            <a class="navbar-brand mb-0 h1" href='/sneakers'>Sneakers</a>
          </div>
-         
+         <div class="nav-right">
+            <a class="navbar-brand mb-0 h1" href='/profile'>Profile</a>
+            <a class="navbar-brand mb-0 h1" href='/signup'>Sign Up</a>
+            <a class="navbar-brand mb-0 h1" href='/login'>Login</a>
+         </div>
+        {{#if user}} 
         <form action='/logout' method='post'>
          <a class="navbar-brand mb-0 h1"><button>Logout</button>
         </form>
+        {{/if}}
 
     </nav>
 
 
       {{{body}}}
+
+      
       <script src="/js/script.js"></script>
 <footer>
   <p id="copyright">Developed by&nbsp;<a target="_blank" href="https://www.linkedin.com/in/v%C3%ADtordalbemcosta/">Vítor Dalbem Costa</a> and <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-pedro-pereira-b60a548b/">José Pedro Pereira</a>. Check out the source code on&nbsp;<a target="_blank" href="https://github.com/jope596/project2_ironkicks">Git Hub</a>.
 </footer>
 </body>
- 
-      <script src="/js/script.js"></script>
+   <script src="/js/script.js"></script>
 </html>

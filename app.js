@@ -33,8 +33,8 @@ app.use("/", authRoutes);
 const sneakersSearch = require("./routes/sneakersSearch");
 app.use("/", sneakersSearch);
 
-
-
+const profileRoutes = require("./routes/profile");
+app.use("/", profileRoutes);
 
 const sneakersRoutes = require("./routes/sneakers");
 app.use("/", sneakersRoutes);

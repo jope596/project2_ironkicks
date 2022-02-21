@@ -95,7 +95,6 @@ router.get("/login", isLoggedOut, (req, res) => {
 
 router.post("/login", isLoggedOut, (req, res, next) => {
   const { email, password } = req.body;
-
   if (!email) {
     return res
       .status(400)
@@ -110,27 +109,32 @@ router.post("/login", isLoggedOut, (req, res, next) => {
     });
   }
 
+  let user;
+
   // Search the database for a user with the username submitted in the form
   User.findOne({ email })
-    .then((user) => {
+    .then((databaseUser) => {
       // If the user isn't found, send the message that user provided wrong credentials
-      if (!user) {
+      if (!databaseUser) {
         return res
           .status(400)
           .render("auth/login", { errorMessage: "Wrong credentials." });
       }
+      user = databaseUser;
 
       // If user is found based on the username, check if the in putted password matches the one saved in the database
-      bcrypt.compare(password, user.passwordHash).then((isSamePassword) => {
-        if (!isSamePassword) {
-          return res
-            .status(400)
-            .render("auth/login", { errorMessage: "Wrong credentials." });
-        }
-        req.session.user = user;
-        // req.session.user = user._id; // ! better and safer but in this case we saving the entire user object
-        return res.redirect("/");
-      });
+      bcrypt
+        .compare(password, user.passwordHash)
+        .then((isSamePassword) => {
+          if (!isSamePassword) {
+            return res
+              .status(400)
+              .render("auth/login", { errorMessage: "Wrong credentials." });
+          }
+          req.session.user = user;
+          // req.session.user = user._id; // ! better and safer but in this case we saving the entire user object
+          return res.redirect("/profile");
+        });
     })
 
     .catch((err) => {
@@ -153,9 +157,9 @@ router.post("/logout", isLoggedIn, (req, res) => {
 });
 
 
-router.get("/profile", (req, res, next) => {
-  res.render("auth/profile");
-});
+
+
+
 
 
 module.exports = router;
