@@ -1,11 +1,14 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
 <h1>sneakers</h1>
 
 
-<div>
+<ul class="container">
   {{#each products}}
-    <p>
-      {{shoeName}}
+    <li class="box">
+      <p>{{shoeName}}</p>
+      {{!-- <div class="box"> --}}
       <img src="{{thumbnail}}" alt="">
-    </p>
+      {{!-- </div> --}}
+    </li>
   {{/each}}
-</div>
+</ul>
