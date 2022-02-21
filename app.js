@@ -30,6 +30,9 @@ app.use("/", index);
 const authRoutes = require("./routes/auth");
 app.use("/", authRoutes);
 
+const sneakersSearch = require("./routes/sneakersSearch");
+app.use("/", sneakersSearch);
+
 
 
 
