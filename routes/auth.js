@@ -153,6 +153,9 @@ router.post("/logout", isLoggedIn, (req, res) => {
 });
 
 
+router.get("/profile", (req, res, next) => {
+  res.render("auth/profile");
+});
 
 
 module.exports = router;

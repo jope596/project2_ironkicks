@@ -28,19 +28,16 @@ const index = require("./routes/index");
 app.use("/", index);
 
 const authRoutes = require("./routes/auth");
-app.use("/auth", authRoutes);
+app.use("/", authRoutes);
 
-const profileRoutes = require("./routes/profile");
-app.use("/profile", profileRoutes);
 
-const quizRoutes = require("./routes/quiz");
-app.use("/quiz", quizRoutes);
+
 
 const sneakersRoutes = require("./routes/sneakers");
-app.use("/sneakers", sneakersRoutes);
+app.use("/", sneakersRoutes);
 
 const suggestionsRoutes = require("./routes/suggestions");
-app.use("/suggestions", suggestionsRoutes);
+app.use("/", suggestionsRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

@@ -2,9 +2,9 @@ const router = require("express").Router();
 
 
 /* GET home page */
-router.get("/profile", (req, res, next) => {
-  res.render("auth/profile");
-});
+/* router.get("/profile", (req, res, next) => {
+  res.render("/profile");
+}); */
 
 
 // router.get("/login", isLoggedOut, (req, res) => {
