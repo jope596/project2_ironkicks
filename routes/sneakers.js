@@ -4,18 +4,7 @@ const sneaks = new SneaksAPI();
 
 
 
-/* GET home page */
 router.get("/sneakers", async(req, res, next) => {
-
-    /* let data = await sneaks.findAll(function(error, products){
-        if (error) {
-            console.log(error)
-            return "No Products In Database";
-          } else {
-            console.log('products.data', products[0].shoeName)
-            return products;
-          }
-}); */
 
  await sneaks.getProducts("", 24, function(err, products){
   if (err) {
@@ -27,12 +16,6 @@ router.get("/sneakers", async(req, res, next) => {
   }
   })
 
-
-
-//   sneaks.getMostPopular(10, function(err, products){
-//     console.log(products)})
-//     res.render ("sneakers", {products})
-// .catch((err) => console.log(`Err while displaying post input page: ${err}`))
 });
 
 

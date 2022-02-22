@@ -19,22 +19,6 @@
   });
 
 
-  
-/* app.get("/sneakers-search", (req, res, next) => {
-    spotifyApi
-      .searchArtists(req.query.artistName)
-      .then((data) => {
-        console.log("The received data from the searchArtists: ", data.body.artists.items);
-        res.render('artist-search-results', {artist: data.body.artists.items });
-        // ----> 'HERE WHAT WE WANT TO DO AFTER RECEIVING THE DATA FROM THE API'
-      })
-      .catch((err) =>
-        console.log("The error while searching artists occurred: ", err)
-      );
-  }); */
-
-
-
 
  module.exports = router; 
 
