@@ -4,11 +4,14 @@
 
 <ul class="container">
   {{#each products}}
-    <li class="box">
-      <p>{{shoeName}}</p>
+    <div class="box">
+     <img src="{{thumbnail}}" alt="">
       {{!-- <div class="box"> --}}
-      <img src="{{thumbnail}}" alt="">
+       <p>{{shoeName}}</p>
       {{!-- </div> --}}
-    </li>
+      <li><a href="{{resellLinks.stockX}}">StockX</a></li>
+      <li><a href="{{resellLinks.goat}}">Goat</a></li>
+      <li><a href="{{resellLinks.flightClub}}">flightClub</a></li>
+    </div>
   {{/each}}
 </ul>

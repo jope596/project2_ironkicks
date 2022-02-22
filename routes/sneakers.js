@@ -17,7 +17,7 @@ router.get("/sneakers", async(req, res, next) => {
           }
 }); */
 
- await sneaks.getProducts("", 5, function(err, products){
+ await sneaks.getProducts("", 24, function(err, products){
   if (err) {
     console.log(err)
     //return "No Products In Database";
