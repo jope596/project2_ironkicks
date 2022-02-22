@@ -213,7 +213,6 @@ img {
     text-align: center;
 } */
 
-<<<<<<< HEAD
 .btn-sneaker-pg {
   border: 1px #EEE;
   border-radius: 20px;
@@ -221,5 +220,15 @@ img {
   margin: 50px 1% 0% 1%;
   padding: 5px;
 }
-=======
->>>>>>> 0370d054450550ec0e19574d3c9e585430dfac7d
+
+
+.addButton {
+  height: 3vh;
+  width: 3vh;
+  border-radius: 50px 40px 50px 40px;
+}
+.sneaker-dt {
+  text-align: center;
+  border: none;
+  margin: 15px;
+}
