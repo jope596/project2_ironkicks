@@ -101,6 +101,58 @@ img {
   align-items: center;
   /* border: 1px solid red; */
 }
+.login-txt {
+  text-align: center;
+}
+.lables-login {
+  text-align: center;
+}
+.btn-login {
+  justify-content: center;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+.btn-login {
+  color: white;
+  padding: 10px 30px;
+  text-decoration: white;
+  font-size: 1.5em;
+  margin: 20px 20px;
+}
+.btn-login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-login span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-login:hover span {
+  padding-right: 25px;
+}
+
+.btn-login:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 .search-btn {
   color: white;
   padding: 10px 30px;
@@ -109,6 +161,7 @@ img {
   margin: 20px 20px;
 }
 .search-btn {
+  justify-content: center;
   display: inline-block;
   border-radius: 50px;
   background-color: #f4511e;
@@ -121,7 +174,6 @@ img {
   transition: all 0.5s;
   cursor: pointer;
   margin: 10px;
-  
 }
 
 .search-btn span {
