@@ -18,9 +18,10 @@ a {
 }
 
 .bg-home {
-  background-image: url(/images/sneaker-nike-streetwear-jordan.jpeg);
+  background-image: url(/images/background.png);
   background-size: cover;
   background-position: center bottom;
+  background-repeat:repeat-y;
 }
 
 .search-box {
@@ -32,8 +33,9 @@ a {
   width: 500px;
   height: 200px;
   background-color: rgba(255, 255, 255, 0);
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
+
 
 
 /* Font Styles */
@@ -99,3 +101,62 @@ img {
   align-items: center;
   /* border: 1px solid red; */
 }
+.search-btn {
+  color: white;
+  padding: 10px 30px;
+  text-decoration: white;
+  font-size: 1.5em;
+  margin: 20px 20px;
+}
+.search-btn {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  
+}
+
+.search-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.search-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.search-btn:hover span {
+  padding-right: 25px;
+}
+
+.search-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* .shoe-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 15px purple;
+    text-align: center;
+} */
