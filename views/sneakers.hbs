@@ -5,13 +5,19 @@
 <ul class="container">
   {{#each products}}
     <div class="box">
-     <img src="{{thumbnail}}" alt="">
+
+<form action="/sneaker-details" method="post"> <input type="text" value="{{this.shoeName}}" name="name" hidden> 
+<button type="submit"> <img src="{{thumbnail}}" alt="sneaker image"> </button> </form> 
+
+
+     
       {{!-- <div class="box"> --}}
        <p>{{shoeName}}</p>
       {{!-- </div> --}}
-      <li><a href="{{resellLinks.stockX}}">StockX</a></li>
-      <li><a href="{{resellLinks.goat}}">Goat</a></li>
-      <li><a href="{{resellLinks.flightClub}}">flightClub</a></li>
+    
     </div>
   {{/each}}
 </ul>
+
+
+  	
