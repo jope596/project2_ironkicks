@@ -1,11 +1,21 @@
-<h1>Your search</h1>
+<link rel="stylesheet" href="/stylesheets/style.css">
+<h1>Your Search</h1>
+<div id="all-sneakers-box">
+    <form class="search-sneakers-box" action='/sneakers-search' method='get'>
+      <label for='sneakerName'></label>
+      <input type='text' name='sneakerName' id='sneakerName' />
+      <button class="search-btn" type='submit'><span>Search for Sneakers</button></span>
+    </form>
 
-
-<div>
+<div class="search-pg">
+  <div class="container">
   {{#each products}}
-    <p>
-      {{shoeName}}
+  <div class="box">
       <img src="{{thumbnail}}" alt="">
-    </p>
+      <p>{{shoeName}}</p>
+      <button type="submit"> <img class="addButton" src="/images/addButton.png" alt="add button"> </button> </form> 
+      <form action="/sneaker-details" method="post"> <input type="text" value="{{this.shoeName}}" name="name" hidden>
+    </div>
   {{/each}}
+  </div>
 </div>

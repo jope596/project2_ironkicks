@@ -7,7 +7,7 @@
 }
 
 body {
-  font: 50px;
+  font: 100px;
   font-size: 20px;
 }
 
@@ -20,8 +20,7 @@ a {
 .bg-home {
   background-image: url(/images/background.png);
   background-size: cover;
-  background-position: center bottom;
-  background-repeat:repeat-y;
+  background-position: center;
 }
 
 .search-box {
@@ -36,15 +35,13 @@ a {
   padding: 10px 20px;
 }
 
-
-
 /* Font Styles */
 
 h1 {
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
-  color: black;
+  color: gray;
   font-size: 2.5em;
 }
 /* Footer */
@@ -104,8 +101,16 @@ img {
 .login-txt {
   text-align: center;
 }
+.signup-txt{
+  text-align: center;
+}
+
 .lables-login {
   text-align: center;
+}
+.lables-signup {
+  text-align: center;
+  margin: 20px;
 }
 .btn-login {
   justify-content: center;
@@ -125,7 +130,7 @@ img {
   color: white;
   padding: 10px 30px;
   text-decoration: white;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 20px 20px;
 }
 .btn-login span {
@@ -200,18 +205,6 @@ img {
   opacity: 1;
   right: 0;
 }
-/* .shoe-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    border-bottom: solid 15px purple;
-    text-align: center;
-} */
 
 .logo-home {
   height: 5vh;
@@ -223,3 +216,45 @@ img {
 
 
 }
+button {
+  border: none;
+}
+.addButton {
+  height: 5vh;
+  border-radius: 90%;
+  background-color: white;
+  
+}
+nav {
+  color: black;
+  position: fixed;
+}
+.nav-left {
+  margin: 2px 20px 2px 25px;
+}
+.nav-right {
+  margin: 2px 20px 2px 25px;
+}
+
+.profile-user {
+  margin: 100px 200px 100px 200px;
+}
+.lets-go-btn{
+  height: 5vh;
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 130px;
+  margin-bottom: 200px;
+}
+.login-txt {
+  padding: 80px;
+}
+.search-sneakers-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
