@@ -1,21 +1,25 @@
-<h2 class="sneaker-dt">Sneaker details</h2>
+<h1>Sneaker Details</h2>
+<div id="all-sneakers-box">
+    <form class="search-sneakers-box" action='/sneakers-search' method='get'>
+      <label for='sneakerName'></label>
+      <input type='text' name='sneakerName' id='sneakerName' />
+      <button class="search-btn" type='submit'><span>Search for Sneakers</button></span>
+</form>
 
-
-
-<ul>
-  
-    <div>
+<ul class="container">
+  <div class="shoe-box">
     <img src="{{products.thumbnail}}" alt="sneaker image">
     <img src="{{products.imageLinks}}" alt="image2">
        <p><h2>{{products.shoeName}}</h2></p>
        <p>Color: {{products.colorway}}</p>
        <p>Release Date: {{products.releaseDate}}</p>
        <p>{{products.description}}</p>
-      
-      Resell Links:
+      <div class="resell-txt">
+      <b>Resell Links</b>:
       <li>Check the price on <a href="{{products.resellLinks.stockX}}" target="_blank" >StockX</a></li>
       <li>Check the price on <a href="{{products.resellLinks.goat}}" target="_blank" >Goat</a></li>
       <li>Check the price on <a href="{{products.resellLinks.flightClub}}" target="_blank" >flightClub</a></li>
+    </div>
     </div>
   
 </ul>
