@@ -28,9 +28,9 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 250px 520px;
-  width: 500px;
-  height: 200px;
+  margin: 50vh 50vw;
+  /* width: 500px;
+  height: 200px; */
   background-color: rgba(255, 255, 255, 0);
   padding: 10px 20px;
 }
@@ -229,6 +229,10 @@ button {
 nav {
   color: black;
   position: fixed;
+}
+
+nav form {
+  display: inline;
 }
 .nav-left {
   margin: 2px 20px 2px 25px;

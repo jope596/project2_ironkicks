@@ -13,9 +13,17 @@
   <div class="box">
       <img src="{{thumbnail}}" alt="">
       <p>{{shoeName}}</p>
-      <button type="submit"> <img class="addButton" src="/images/addButton.png" alt="add button"> </button> </form> 
-      <form action="/sneaker-details" method="post"> <input type="text" value="{{this.shoeName}}" name="name" hidden>
+      
+
+<form action="/profile" method="post"> <input type="text" value="{{this.shoeName}}" name="name" hidden> 
+<input type="number" value="{{this.retailPrice}}" name="price" hidden>
+<input type="text" value="{{this.thumbnail}}" name="image" hidden>
+<button type="submit"> <img class="addButton" src="/images/addButton.png" alt="add button"> </button> </form> 
+
+
+
+
     </div>
   {{/each}}
   </div>
-</div>
+</div> 
