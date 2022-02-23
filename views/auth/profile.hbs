@@ -20,8 +20,14 @@
 <ul>
   {{#each user.favourite}}
     <li>{{name}} </li>
-    <li>{{price}}</li>
-    <li><img src="{{image}}" alt="sneaker image"></li>
-    <button type="submit"> <img class="addButton" src="/images/removeButton.png" alt="remove button"> </button> </form>
+    <li>€ {{price}}</li>
+    <li>
+      <img src="{{image}}" alt="sneaker image">
+    </li>
+    <form action="/profile/delete/sneakers/{{_id}}" method="post">
+      <button type="submit">
+        <img class="addButton" src="/images/removeButton.png" alt="remove button"/>
+      </button> 
+    </form>
   {{/each}}
 </ul>

@@ -2,24 +2,18 @@ const router = require("express").Router();
 const SneaksAPI = require('sneaks-api');
 const sneaks = new SneaksAPI();
 
-
-router.post('/books/:bookId/delete', (req, res, next) => {
-    const { bookId } = req.params;
-  
-    Book.findByIdAndDelete(bookId)
-      .then(() => {
-        res.redirect(`/books`);
-      })
-      .catch((err) => {
-        next(err);
-      });
-  });
-
-
-
-
+const User = require("../models/User.model");
+const Sneaker = require("../models/Sneaker.model");
 
   
+router.post("/profile/delete/sneakers/:sneakerId", async(req, res, next) => {
+    const { sneakerId } = req.params;
 
-  module.exports = router;
-  
+    User.findByIdAndUpdate(req.session.user._id, {
+      $pull: { favourite: sneakerId },
+    })
+    .then(() => res.redirect("/profile"))
+    .catch((err) => next(err));
+});
+
+module.exports = router;
