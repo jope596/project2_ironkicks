@@ -6,12 +6,14 @@ const sneakerSchema = new Schema(
     name: {
       type: String,
       required: true,
-      unique: true,
     },
     price: {
       type: Number,
       required: true,
     },
+    image: {
+      type: String,
+    }
   },
   {
     timestamps: true,
