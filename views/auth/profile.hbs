@@ -10,6 +10,18 @@
   <p><b>You need to be logged in</p></b>
 
 {{/if}}
+
+
+
+
 </div>
 
 
+<ul>
+  {{#each user.favourite}}
+    <li>{{name}} </li>
+    <li>{{price}}</li>
+    <li><img src="{{image}}" alt="sneaker image"></li>
+    <button type="submit"> <img class="addButton" src="/images/removeButton.png" alt="remove button"> </button> </form>
+  {{/each}}
+</ul>

@@ -11,6 +11,8 @@ const userSchema = new Schema(
       trim: true,
       match: [/^\S+@\S+\.\S+$/, 'Please use a valid email address.'],
     },
+    favourite: [{ type: Schema.Types.ObjectId, ref: 'Sneaker' }],
+    
     passwordHash: {
       type: String,
       required: true,
@@ -24,3 +26,4 @@ const userSchema = new Schema(
 const User = model('User', userSchema);
 
 module.exports = User;
+
