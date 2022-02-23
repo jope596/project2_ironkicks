@@ -13,23 +13,21 @@
    <body>
       
       <nav class="navbar navbar-dark bg-dark">
-            <div class="nav-left">
+         <div class="nav-left">
             <a class="navbar-brand mb-0 h1" href='/'>Home</a>
             <a class="navbar-brand mb-0 h1" href='/sneakers'>Sneakers</a>
          </div>
          <div class="nav-right">
-            <a class="navbar-brand mb-0 h1" href='/profile'>Profile</a>
-            <a class="navbar-brand mb-0 h1" href='/signup'>Sign Up</a>
-            <a class="navbar-brand mb-0 h1" href='/login'>Login</a>
-         </div>
-         
-        {{#if user}} 
-        <form action='/logout' method='post'>
-         <a class="navbar-brand mb-0 h1"><button>Logout</button>
-        </form>
-        {{/if}}
-        
-
+            {{#if user}}
+              <a class="navbar-brand mb-0 h1" href='/profile'>Profile</a>
+               <form action='/logout' method='post'>
+                  <a class="navbar-brand mb-0 h1"><button>Logout</button>
+               </form>
+            {{else}}
+               <a class="navbar-brand mb-0 h1" href='/signup'>Sign Up</a>
+               <a class="navbar-brand mb-0 h1" href='/login'>Login</a>
+            {{/if}}
+      </div>
     </nav>
 
 
