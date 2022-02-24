@@ -28,7 +28,7 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 40vh 40vw;
+  margin: 20vh 30vw;
   /* width: 500px;
   height: 200px; */
   background-color: rgba(255, 255, 255, 0);
@@ -44,13 +44,18 @@ h1 {
   color: gray;
   font-size: 2.5em;
 }
+.heading-profile {
+  text-align: center;
+  color: gray;
+  font-size: 1.4em;
+}
 /* Footer */
 footer {
   background-color: var(--white);
   outline: 10px solid var(--white);
-  outline-offset: 6px;
-  padding: 15px;
-  margin: 20px;
+  /* outline-offset: 6px; */
+  /* padding: 15px;
+  margin: 20px; */
   color: var(--black);
   text-align: center;
   font-size: 1rem;
@@ -76,9 +81,21 @@ footer a {
   /* justify-content: center;
   align-items: stretch; */
 }
-
+.container-profile {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  justify-content: center;
+  align-items: stretch;
+}
 
 .box {
+  width: 20em;
+  object-fit: contain;
+  margin: 13px;
+
+}
+.box-profile {
   width: 20em;
   object-fit: contain;
   margin: 13px;
@@ -87,6 +104,9 @@ footer a {
 
 .box p {
   font-size: 1em;
+}
+.box-profile p {
+  font-size: 0.8em;
 }
 
 img {
@@ -222,9 +242,13 @@ button {
 }
 .addButton {
   height: 5vh;
-  border-radius: 90%;
+  border-radius: 5%;
+  background-color: white; 
+}
+.addButton-profile {
+  height: 5vh;
+  border-radius: 5%;
   background-color: white;
-  
 }
 nav {
   color: black;
@@ -263,4 +287,16 @@ nav form {
   width: 200px;
 }
 
+.ul-profile {
+  list-style-type: none;
+}
+.resell-txt {
+  list-style-type: none;
+  width: 800px; 
+  height: 70px; 
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  margin: 10em;
+}
 

@@ -11,15 +11,16 @@
     <img src="{{products.thumbnail}}" alt="sneaker image">
     <img src="{{products.imageLinks}}" alt="image2">
        <p><h2>{{products.shoeName}}</h2></p>
-       <p>Color: {{products.colorway}}</p>
-       <p>Release Date: {{products.releaseDate}}</p>
+       <p><b>Color</b>: {{products.colorway}}</p>
+       <p><b>Release Date</b>: {{products.releaseDate}}</p>
        <p>{{products.description}}</p>
-      <div class="resell-txt">
-      <b>Resell Links</b>:
+      <ul class="resell-txt">
+
+      <b>Check below where you can get these</b>:
       <li>Check the price on <a href="{{products.resellLinks.stockX}}" target="_blank" >StockX</a></li>
       <li>Check the price on <a href="{{products.resellLinks.goat}}" target="_blank" >Goat</a></li>
       <li>Check the price on <a href="{{products.resellLinks.flightClub}}" target="_blank" >flightClub</a></li>
-    </div>
+    </ul>
     </div>
   
 </ul>

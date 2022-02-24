@@ -1,8 +1,24 @@
 <link rel="stylesheet" href="/stylesheets/style.css">
 <div class="profile-user">
+  
 {{!-- <h2>Iron Kicks user profile</h2> --}}
 {{#if user}}
-  <h3>Welcome, {{user.email}} </h3>
+
+<div class="heading-profile">
+  <h1>Welcome back, <b><i> {{user.email}} </b></i> </h1>
+</div>
+
+
+
+
+{{!-- <div id="all-sneakers-box-profile">
+    <form class="search-sneakers-box-profile" action='/sneakers-search' method='get'>
+      <label for='sneakerName'></label>
+      <input type='text' name='sneakerName' id='sneakerName' />
+      <button class="search-btn" type='submit'><span>Search for Sneakers</button></span>
+    </form>
+</div> --}}
+
 
 {{else}}
 
@@ -16,18 +32,20 @@
 
 </div>
 
-
-<ul>
+<div class="search-pg">
+<ul class="container-profile">
   {{#each user.favourite}}
-    <li>{{name}} </li>
-    <li>€ {{price}}</li>
-    <li>
-      <img src="{{image}}" alt="sneaker image">
-    </li>
-    <form action="/profile/delete/sneakers/{{_id}}" method="post">
-      <button type="submit">
-        <img class="addButton" src="/images/removeButton.png" alt="remove button"/>
-      </button> 
-    </form>
+  <div class="box-profile">
+    <img src="{{image}}" alt="sneaker image">
+
+          <p>{{name}} </p>
+          <p>€ {{price}}</p>
+      <form action="/profile/delete/sneakers/{{_id}}" method="post">
+        <button type="submit">
+          <img class="addButton-profile" src="/images/removeButton.png" alt="remove button"/>
+        </button> 
+      </form>
+  </div>
   {{/each}}
 </ul>
+</div>
