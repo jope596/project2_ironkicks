@@ -38,8 +38,10 @@
   <div class="box-profile">
     <img src="{{image}}" alt="sneaker image">
 
+    
+
           <p>{{name}} </p>
-          <p>€ {{price}}</p>
+          <span><b>Retail price: €{{price}}</span></b>
       <form action="/profile/delete/sneakers/{{_id}}" method="post">
         <button type="submit">
           <img class="addButton-profile" src="/images/removeButton.png" alt="remove button"/>

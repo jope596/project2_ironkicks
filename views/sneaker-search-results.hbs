@@ -11,7 +11,12 @@
   <div class="container">
   {{#each products}}
   <div class="box">
-      <img src="{{thumbnail}}" alt="">
+
+    <form action="/sneaker-details" method="post"> <input type="text" value="{{this.shoeName}}" name="name" hidden> 
+<button class="btn-sneaker-pg" type="submit"> <img src="{{thumbnail}}" alt="sneaker image"> </button> </form> 
+
+
+
       <p>{{shoeName}}</p>
       
 

@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: #00b7ff;
+  color: rgb(87, 85, 85);
   list-style: none;
 
 }
@@ -47,7 +47,7 @@ h1 {
 .heading-profile {
   text-align: center;
   color: gray;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 /* Footer */
 footer {
@@ -297,6 +297,32 @@ nav form {
   margin-bottom: 10px;
   text-align: center;
   justify-content: center;
-  margin: 10em;
+  margin: 20vh 15vw;
+}
+.details-txt {
+  justify-content: center;
 }
 
+.sneaker-img-details {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 1em;
+}
+.shoe-name-details {
+  width: 800px;
+  text-align: center;
+  justify-content: center;
+  margin: 6vh 15vw;
+  font-size: 4em;
+}
+.box-profile > p{
+  font-size: larger;
+  color: gray;
+}
+.box-profile > span {
+  color: black;
+  font-size: larger;
+  margin-bottom: 25px;
+}
