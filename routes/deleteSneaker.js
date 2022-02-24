@@ -1,6 +1,5 @@
 const router = require("express").Router();
-const SneaksAPI = require('sneaks-api');
-const sneaks = new SneaksAPI();
+
 
 const User = require("../models/User.model");
 const Sneaker = require("../models/Sneaker.model");

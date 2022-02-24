@@ -16,7 +16,8 @@
     "hbs": "^4.2.0",
     "mongoose": "^6.2.2",
     "morgan": "^1.10.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "sneaks-api": "^1.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
